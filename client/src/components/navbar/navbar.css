@@ -1,0 +1,34 @@
+.navbar{
+  height: 50px;
+  background-color: #fdfeff;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1224px;
+  text-transform: uppercase;
+  color: rgb(208, 32, 91);
+  display: flex;
+  font-family: cursive;
+  align-items: center;
+  
+  justify-content: space-between;
+}
+
+.logo{
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(208, 32, 91);
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navButton{
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
