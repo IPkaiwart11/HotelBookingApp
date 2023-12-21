@@ -93,6 +93,7 @@ const Header = ({ type }) => {
             <p className="headerDesc">
             Unlock special offers and exclusive discounts to save on your hotel bookings. We ensure you get the best value for your money.
             </p>
+            {/* {`${Date()}`} */}
             {!user && <button className="headerBtn">Sign in / Register</button>}
             <div className="headerSearch">
               <div className="headerSearchItem">
@@ -109,9 +110,9 @@ const Header = ({ type }) => {
                 <span
                   onClick={() => setOpenDate(!openDate)}
                   className="headerSearchText"
-                >{`${format(dates[0].startDate, "MM/dd/yyyy")} to ${format(
+                >{`${format(dates[0].startDate, "dd/MM/yyyy")} to ${format(
                   dates[0].endDate,
-                  "MM/dd/yyyy"
+                  "dd/MM/yyyy"
                 )}`}</span>
                 {openDate && (
                   <DateRange

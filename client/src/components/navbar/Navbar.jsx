@@ -8,9 +8,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navContainer">
-        <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
+        <NavLink to="/" style={{ color: "inherit", textDecoration: "none" }}>
           <span className="logo">Hotal booking</span>
-        </Link>
+        </NavLink>
         {user ? user.username : (
           <div className="navItems">
            <NavLink to="/Registration"> <button className="navButton">Register</button></NavLink>

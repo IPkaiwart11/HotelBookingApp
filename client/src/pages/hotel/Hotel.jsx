@@ -63,6 +63,7 @@ const Hotel = () => {
       navigate("/login");
     }
   };
+  console.log(data);
   return (
     <div>
       <Navbar />
@@ -98,7 +99,7 @@ const Hotel = () => {
             </div>
           )}
           <div className="hotelWrapper">
-            <button className="bookNow">Reserve or Book Now!</button>
+            <button className="bookNow" onClick={handleClick}>Reserve or Book Now!</button>
             <h1 className="hotelTitle">{data.name}</h1>
             <div className="hotelAddress">
               <FontAwesomeIcon icon={faLocationDot} />

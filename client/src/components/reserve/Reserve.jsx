@@ -65,6 +65,7 @@ const Reserve = ({ setOpen, hotelId }) => {
       navigate("/");
     } catch (err) {}
   };
+  console.log(data);
   return (
     <div className="reserve">
       <div className="rContainer">
@@ -87,6 +88,8 @@ const Reserve = ({ setOpen, hotelId }) => {
             <div className="rSelectRooms">
               {item.roomNumbers.map((roomNumber) => (
                 <div className="room">
+               
+                
                   <label>{roomNumber.number}</label>
                   <input
                     type="checkbox"
@@ -99,6 +102,8 @@ const Reserve = ({ setOpen, hotelId }) => {
             </div>
           </div>
         ))}
+
+       
         <button onClick={handleClick} className="rButton">
           Reserve Now!
         </button>
