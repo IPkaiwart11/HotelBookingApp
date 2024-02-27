@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import axios from "axios";
 import "./single.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
@@ -32,7 +32,10 @@ const Single = () => {
         <Navbar />
         <div className="top">
           <div className="left">
+            <NavLink to={`/users/${userId}/editUser`}>
             <div className="editButton">Edit</div>
+            </NavLink>
+            
             <h1 className="title">Information</h1>
             <div className="item">
               <img

@@ -32,13 +32,14 @@ const New = ({ inputs, title }) => {
       };
 
       await axios.post("/auth/register", newUser);
+      console.log(info);
+      alert("successfully user registerd!")
     } catch (err) {
-      // console.log(err);
       console.log("Error response data:", err.response.data);
     }
   };
 
-  console.log(info);
+  // console.log(info);
   return (
     <div className="new">
       <Sidebar />

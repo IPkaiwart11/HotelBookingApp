@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import axios from "axios";
 import "./single.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
@@ -34,7 +34,10 @@ const RoomDetails = () => {
         <Navbar />
         <div className="top">
           <div className="left">
+            <NavLink to={`/rooms/${roomId}/editRoom`}>
             <div className="editButton">Edit</div>
+            </NavLink>
+            
             <h1 className="title">Information</h1>
             <div className="item">
               {/* <img
